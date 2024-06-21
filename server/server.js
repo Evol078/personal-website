@@ -12,9 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../')));
 
 // Handle form submission
-app.post('/submit_form', (req, res) => {
+app.post('https://formspree.io/f/mwpeevkv', (req, res) => {
   console.log('Form data received:', req.body);
-  res.redirect('/');
+  res.redirect('/index.html');
 });
 
 // Start the server
