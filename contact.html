@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - 我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Website</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">个人简历</a></li>
+            <li><a href="hobbies.html">爱好与兴趣</a></li>
+            <li><a href="photos.html">照片</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li class="selected"><a href="contact.html">联系我</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>联系我</h1>
+            <form action="/submit_form" method="post">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">留言：</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">提交</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 我的个人网站 | 联系方式：2957543478@qq.com</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

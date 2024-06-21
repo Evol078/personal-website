@@ -1,0 +1,130 @@
+/* style.css */
+body {
+    font-family: "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 51, 102, 0.9); /* 带透明度的深蓝色背景 */
+    color: #fff;
+    padding: 20px 0; /* 调整内边距，使其更大 */
+    text-align: center;
+    height: auto; /* 高度由内容决定 */
+}
+
+.logo {
+    font-size: 2em; /* 调整字体大小 */
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+}
+
+nav {
+    background-color: #003366; /* 深蓝色背景 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    position: sticky; /* 导航栏在页面滚动时固定在顶部 */
+    top: 0;
+    z-index: 1000; /* 确保导航栏在其他内容上方 */
+    margin: 0; /* 导航栏两侧留出间距 */
+    padding: 10px 0; /* 导航栏上下留出间距 */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* 白色文字 */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px; /* 圆角效果 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+    text-decoration: none; /* 去掉下划线 */
+    display: block; /* 让链接成为块级元素 */
+}
+
+nav ul li.selected a {
+    background-color: #1e90ff; /* 选中的背景色 */
+    color: #ffffff; /* 选中的文字颜色 */
+}
+
+nav ul li a:hover {
+    background-color: #1e90ff; /* 悬停的背景色 */
+    color: #ffffff; /* 悬停的文字颜色 */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgba(0, 51, 102, 0.9); /* 带透明度的深蓝色背景 */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+h1 {
+    font-size: 1.5em; /* 调整字体大小 */
+    color: #003366; /* 深蓝色 */
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #003366; /* 深蓝色 */
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003366; /* 深蓝色 */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em; /* 调整输入框字体大小 */
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #003366; /* 深蓝色按钮背景 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+form button:hover {
+    background-color: #00509e; /* 深蓝色按钮悬停背景 */
+}

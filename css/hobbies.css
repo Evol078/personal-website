@@ -1,0 +1,54 @@
+/*  */
+div#tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+div#tableRow {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+}
+
+#left-text {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#right-text {
+    flex: 2;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tableRow h1 {
+    font-size: 1.8em; /* 调整标题字体大小 */
+    color: #003366; /* 深蓝色 */
+    border-bottom: 2px solid #1e90ff; /* 浅蓝色下划线 */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#tableRow h2 {
+    font-size: 1.5em; /* 调整副标题字体大小 */
+    color: #003366; /* 深蓝色 */
+    margin-bottom: 0;
+}
+
+#tableRow p {
+    font-size: 1.1em; /* 调整段落字体大小 */
+    line-height: 1.6; /* 设置行高 */
+    color: #333; /* 设定段落文字颜色 */
+    margin-top: 0;
+    margin-bottom: 15px;
+}

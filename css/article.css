@@ -1,0 +1,39 @@
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 178px); /* 减去 header 和 footer 的高度 */
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.9); /* 带透明度的白色背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+article h1 {
+    font-size: 2em;
+    color: #003366; /* 深蓝色 */
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
